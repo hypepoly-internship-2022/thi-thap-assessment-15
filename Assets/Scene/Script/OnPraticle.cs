@@ -6,7 +6,7 @@ public class OnPraticle : MonoBehaviour
 {
 
     private Rigidbody body;
-    private int rock;
+    private int Rock;
 
 
 
@@ -14,11 +14,11 @@ public class OnPraticle : MonoBehaviour
     {
         if(other.tag == "Rock")
         {
-            rock--;
+            Rock--;
             body = other.GetComponent<Rigidbody>();
             randomWaterForce(body);
             body.useGravity = true;
-            other.tag = "Clean";
+
         }
     }
 
